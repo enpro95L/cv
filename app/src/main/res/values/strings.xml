@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Curriculum Vitae</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bio"><b>Skilled Android Developer</b> with 6 years of hands-on experience designing and implementing Android applications using Java, Kotlin, Git, greenDAO, REST, MVVM, and SQLite in high-performance and secure environments that streamline processes.</string>
+    <string name="languages"><b>Languages</b>:  Java, Kotlin, Flutter, React-Native</string>
+    <string name="web"><b>Web</b>:  HTML, CSS, Ajax</string>
+    <string name="web_services"><b>Web Services</b>:  RESTful</string>
+    <string name="frameworks"><b>Frameworks</b>:  Node.js, React.js, Mockito, Espresso</string>
+    <string name="databases"><b>Databases</b>:  SQLite</string>
+    <string name="design"><b>Design Patterns</b>:  MVVM, Singleton, Clean Architecture</string>
+    <string name="SDLC"><b>SDLC</b>:  Scrum</string>
+    <string name="tools"><b>Tools</b>:  Android Studio, Gradle, IntelliJ IDEA</string>
+    <string name="platforms"><b>Platforms</b>:  Windows</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            android:src="@drawable/google" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/imgLogo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                style="@style/MyTextView.Large"
+                android:text="Google Inc."
+                android:textColor="@color/dark_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/MyTextView.Medium"
+                android:text="Software Engineer" />
+
+            <TextView
+                android:id="@+id/tvWorkDuration"
+                style="@style/MyTextView.Medium"
+                android:text="April 2017 - Jan 2019"
+                android:textColor="@color/normal_gray" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
