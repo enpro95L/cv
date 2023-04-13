@@ -1,7 +1,9 @@
 package com.powersoft.curriculumvitae.models
 
+import androidx.annotation.DrawableRes
+
 data class Experience(
-    val icon: Int,
+    @DrawableRes val icon: Int,
     val companyName: String,
     val title: String,
     val workDuration: String

@@ -12,5 +12,8 @@
     <string name="SDLC"><b>SDLC</b>:  Scrum</string>
     <string name="tools"><b>Tools</b>:  Android Studio, Gradle, IntelliJ IDEA</string>
     <string name="platforms"><b>Platforms</b>:  Windows</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="linkedin_profile">LinkedIn Profile</string>
+    <string name="linkedin_link">linkedin.com/in/derrick-siayor-1a266410b</string>
 
 </resources>

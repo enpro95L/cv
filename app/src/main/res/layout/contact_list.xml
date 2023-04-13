@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:importantForAccessibility="no"
+            android:padding="12dp"
+            tools:src="@drawable/linkedin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/ivIcon"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/MyTextView.Large"
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/linkedin_profile"
+                android:textColor="@color/dark_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/MyTextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContent"
+                android:autoLink="web"
+                tools:text="@string/linkedin_link" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -10,6 +10,7 @@ import com.powersoft.curriculumvitae.R
 import com.powersoft.curriculumvitae.adapters.ExperienceAdapter
 import com.powersoft.curriculumvitae.databinding.FragmentExperienceBinding
 import com.powersoft.curriculumvitae.models.Experience
+import com.powersoft.curriculumvitae.repositories.ExperienceRepo
 
 class ExperienceFragment: Fragment(){
 
@@ -29,20 +30,16 @@ class ExperienceFragment: Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        experienceList = ArrayList()
-        experienceList.add(Experience(R.drawable.beacon, "BeaconFire Inc.", "Senior Mobile Developer - Android", "Feb 2023 - Present"))
-        experienceList.add(Experience(R.drawable.paylocity, "Paylocity", "Principal Mobile Developer", "Aug 2022 - Feb 2023"))
-        experienceList.add(Experience(R.drawable.kforce, "Kforce", "Senior Android Developer", "Jul 2019 - Aug 2021"))
-        experienceList.add(Experience(R.drawable.google, "Google Inc.", "Software Engineer", "Apr 2016 - Jan 2019"))
+        experienceList = ArrayList(ExperienceRepo.getData())
 
         adapter = ExperienceAdapter(experienceList)
 
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(requireActivity())
 
-        binding.fabAdd.setOnClickListener{
-            experienceList.add(Experience(R.drawable.addison, "Addison Group", "Mobile Application Developer", "Feb 2023 - Present"))
-            adapter.notifyItemChanged(experienceList.size)
-        }
+//        binding.fabAdd.setOnClickListener{
+//            experienceList.add(Experience(R.drawable.addison, "Addison Group", "Mobile Application Developer", "Feb 2023 - Present"))
+//            adapter.notifyItemChanged(experienceList.size)
+//        }
     }
 }
