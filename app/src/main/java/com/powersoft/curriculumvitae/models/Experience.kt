@@ -7,4 +7,4 @@ data class Experience(
     val companyName: String,
     val title: String,
     val workDuration: String
-)
+) : java.io.Serializable

@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.powersoft.curriculumvitae.R
 import com.powersoft.curriculumvitae.adapters.ContactAdapter
 import com.powersoft.curriculumvitae.databinding.FragmentContactBinding
@@ -20,7 +19,13 @@ class ContactFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentContactBinding.bind(inflater.inflate(R.layout.fragment_contact,container, false))
+        binding = FragmentContactBinding.bind(
+            inflater.inflate(
+                R.layout.fragment_contact,
+                container,
+                false
+            )
+        )
         return binding.root
     }
 
@@ -29,7 +34,7 @@ class ContactFragment : Fragment() {
 
         val adapter = ContactAdapter(ContactRepo.getData())
 
-        with (binding) {
+        with(binding) {
             recyclerView.adapter = adapter
             recyclerView.layoutManager = LinearLayoutManager(requireContext())
         }

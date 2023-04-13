@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    tools:context=".AddExperienceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/dark_blue" />
+
+        <TextView
+            style="@style/MyTextView.XLarge"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/imgBack"
+            android:text="Add Experience"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvRequiredField"
+        style="@style/MyTextView.Medium"
+        android:layout_marginTop="20dp"
+        android:text="Required *" />
+
+    <TextView
+        style="@style/MyTextView.Medium"
+        android:layout_marginTop="20dp"
+        android:text="Company Name *" />
+
+    <EditText
+        android:id="@+id/etCompany"
+        style="@style/MyEditText.Medium"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="none"
+        android:background="@drawable/drawable_edittext"
+        android:hint="Company Name"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp" />
+
+    <TextView
+        style="@style/MyTextView.Medium"
+        android:layout_marginTop="10dp"
+        android:text="Position/Title *" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        style="@style/MyEditText.Medium"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="none"
+        android:background="@drawable/drawable_edittext"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp" />
+
+    <TextView
+        style="@style/MyTextView.Medium"
+        android:layout_marginTop="10dp"
+        android:text="Work Duration (Apr 2010 - Jun 2019) *" />
+
+    <EditText
+        android:id="@+id/etWorkDuration"
+        style="@style/MyEditText.Medium"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="none"
+        android:background="@drawable/drawable_edittext"
+        android:hint="Work Duration"
+        android:inputType="textEmailAddress"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnAddExperience"
+        style="@style/MyButton"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/drawable_button"
+        android:text="Add Experience"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWorkDuration" />
+
+</LinearLayout>
